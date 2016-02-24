@@ -25,6 +25,12 @@
 		B18F6F341C7D7FB3008A0E63 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F6F331C7D7FB3008A0E63 /* MobileCoreServices.framework */; };
 		B18F6F361C7D7FBE008A0E63 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F6F351C7D7FBE008A0E63 /* Security.framework */; };
 		B18F6F381C7D7FD2008A0E63 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B18F6F371C7D7FD2008A0E63 /* SystemConfiguration.framework */; };
+		B1F695AC1C7D8EEB00093E82 /* NSObject+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F695A91C7D8EEB00093E82 /* NSObject+JSONCategories.m */; };
+		B1F695AD1C7D8EEB00093E82 /* NSString+JSONCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F695AB1C7D8EEB00093E82 /* NSString+JSONCategories.m */; };
+		B1F695B71C7D8F4300093E82 /* NSDictionary+JSONString.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F695B01C7D8F4300093E82 /* NSDictionary+JSONString.m */; };
+		B1F695B81C7D8F4300093E82 /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F695B21C7D8F4300093E82 /* NSDictionary+SafeAccess.m */; };
+		B1F695B91C7D8F4300093E82 /* NSString+DictionaryValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F695B41C7D8F4300093E82 /* NSString+DictionaryValue.m */; };
+		B1F695BA1C7D8F4300093E82 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F695B61C7D8F4300093E82 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,18 @@
 		B18F6F331C7D7FB3008A0E63 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		B18F6F351C7D7FBE008A0E63 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B18F6F371C7D7FD2008A0E63 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B1F695A81C7D8EEB00093E82 /* NSObject+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JSONCategories.h"; sourceTree = "<group>"; };
+		B1F695A91C7D8EEB00093E82 /* NSObject+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JSONCategories.m"; sourceTree = "<group>"; };
+		B1F695AA1C7D8EEB00093E82 /* NSString+JSONCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JSONCategories.h"; sourceTree = "<group>"; };
+		B1F695AB1C7D8EEB00093E82 /* NSString+JSONCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONCategories.m"; sourceTree = "<group>"; };
+		B1F695AF1C7D8F4300093E82 /* NSDictionary+JSONString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSONString.h"; sourceTree = "<group>"; };
+		B1F695B01C7D8F4300093E82 /* NSDictionary+JSONString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSONString.m"; sourceTree = "<group>"; };
+		B1F695B11C7D8F4300093E82 /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
+		B1F695B21C7D8F4300093E82 /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
+		B1F695B31C7D8F4300093E82 /* NSString+DictionaryValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DictionaryValue.h"; sourceTree = "<group>"; };
+		B1F695B41C7D8F4300093E82 /* NSString+DictionaryValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DictionaryValue.m"; sourceTree = "<group>"; };
+		B1F695B51C7D8F4300093E82 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		B1F695B61C7D8F4300093E82 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +118,13 @@
 				B142B0B21C7D7E7500443122 /* AppDelegate.m */,
 				B142B0B41C7D7E7500443122 /* ViewController.h */,
 				B142B0B51C7D7E7500443122 /* ViewController.m */,
+				B1F695AE1C7D8F4300093E82 /* Category */,
 				B142B0B71C7D7E7500443122 /* Main.storyboard */,
 				B142B0BA1C7D7E7500443122 /* Assets.xcassets */,
+				B1F695A81C7D8EEB00093E82 /* NSObject+JSONCategories.h */,
+				B1F695A91C7D8EEB00093E82 /* NSObject+JSONCategories.m */,
+				B1F695AA1C7D8EEB00093E82 /* NSString+JSONCategories.h */,
+				B1F695AB1C7D8EEB00093E82 /* NSString+JSONCategories.m */,
 				B142B0BC1C7D7E7500443122 /* LaunchScreen.storyboard */,
 				B142B0BF1C7D7E7500443122 /* Info.plist */,
 				B18F6F371C7D7FD2008A0E63 /* SystemConfiguration.framework */,
@@ -144,6 +167,21 @@
 				B18F6F291C7D7F84008A0E63 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B1F695AE1C7D8F4300093E82 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B1F695AF1C7D8F4300093E82 /* NSDictionary+JSONString.h */,
+				B1F695B01C7D8F4300093E82 /* NSDictionary+JSONString.m */,
+				B1F695B11C7D8F4300093E82 /* NSDictionary+SafeAccess.h */,
+				B1F695B21C7D8F4300093E82 /* NSDictionary+SafeAccess.m */,
+				B1F695B31C7D8F4300093E82 /* NSString+DictionaryValue.h */,
+				B1F695B41C7D8F4300093E82 /* NSString+DictionaryValue.m */,
+				B1F695B51C7D8F4300093E82 /* NSString+Hash.h */,
+				B1F695B61C7D8F4300093E82 /* NSString+Hash.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,16 +254,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F695AC1C7D8EEB00093E82 /* NSObject+JSONCategories.m in Sources */,
+				B1F695B71C7D8F4300093E82 /* NSDictionary+JSONString.m in Sources */,
 				B18F6F2A1C7D7F84008A0E63 /* AFHTTPRequestOperation.m in Sources */,
 				B142B0B61C7D7E7500443122 /* ViewController.m in Sources */,
 				B18F6F2B1C7D7F84008A0E63 /* AFHTTPRequestOperationManager.m in Sources */,
 				B18F6F2D1C7D7F84008A0E63 /* AFNetworkReachabilityManager.m in Sources */,
 				B18F6F311C7D7F84008A0E63 /* AFURLResponseSerialization.m in Sources */,
+				B1F695B81C7D8F4300093E82 /* NSDictionary+SafeAccess.m in Sources */,
 				B18F6F2F1C7D7F84008A0E63 /* AFURLConnectionOperation.m in Sources */,
 				B18F6F2E1C7D7F84008A0E63 /* AFSecurityPolicy.m in Sources */,
 				B18F6F2C1C7D7F84008A0E63 /* AFHTTPSessionManager.m in Sources */,
 				B18F6F301C7D7F84008A0E63 /* AFURLRequestSerialization.m in Sources */,
+				B1F695B91C7D8F4300093E82 /* NSString+DictionaryValue.m in Sources */,
+				B1F695BA1C7D8F4300093E82 /* NSString+Hash.m in Sources */,
 				B18F6F321C7D7F84008A0E63 /* AFURLSessionManager.m in Sources */,
+				B1F695AD1C7D8EEB00093E82 /* NSString+JSONCategories.m in Sources */,
 				B142B0B31C7D7E7500443122 /* AppDelegate.m in Sources */,
 				B142B0B01C7D7E7500443122 /* main.m in Sources */,
 			);

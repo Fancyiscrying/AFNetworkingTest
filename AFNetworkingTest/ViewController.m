@@ -9,6 +9,8 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "ViewController.h"
 #import "AFNetworking.h"
+#import "NSDictionary+JSONString.h"
+#import "NSObject+JSONCategories.h"
 #ifdef DEBUG
 #define posturl    @"http://10.244.171.106/SmartPen/user.json"
 #define geturl      @"http://10.244.171.106/SmartPen/securityQuestion.json"
@@ -44,8 +46,12 @@
     [manager POST:posturl parameters:dict success:^(AFHTTPRequestOperation *operation, id responseObject){
     
         NSLog(@"返回结果是：%@",responseObject);
+        NSData *data =[responseObject JSONString];
+        NSLog(@"%@",data);
+        
     } failure:^(AFHTTPRequestOperation *operation,NSError *error){
         NSLog(@"%@",error);
+        
     }];
     
     
@@ -59,6 +65,9 @@
     
     [manager GET:geturl parameters:nil success:^(AFHTTPRequestOperation *operation,id responseObject){
          NSLog(@"%@",responseObject);
+        NSData *data =[responseObject JSONString];
+        NSLog(@"%@",data);
+
      
      
      }failure:^(AFHTTPRequestOperation *operation ,NSError *error)
